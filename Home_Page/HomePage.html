@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashbord</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- Vertical navbar -->
+<div class="vertical-nav " id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <img loading="lazy" src="user1.png" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body m-2">
+        <h5 class="m-0">Username</h5>
+        <p class="font-weight-normal text-muted mb-0 small">Web developer</p>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav flex-column nav-pills nav-pills-dark nav-lb-tab m-4">
+    <li class="nav-item" role="presentation">
+      <a href="HomePage.html" style="text-decoration: none;"> <button class="but nav-link active bg-"
+          id="Profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+          aria-controls="profile-tab-pane" aria-selected="true"> <i class="fa fa-user-circle me-1"
+            aria-hidden="true"></i>Dashbord</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Orderd-tab" data-bs-toggle="tab" data-bs-target="#Orderd-tab-pane"
+          type="button" role="tab" aria-controls="Orderd-tab-pane" aria-selected="true"><i
+            class="fa fa-handshake-o me-1" aria-hidden="true"></i>
+          Manage Link</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;"><button class="nav-link text-dark" id="Payment_Method-tab"
+          data-bs-toggle="tab" data-bs-target="#Payment_Method-tab-pane" type="button" role="tab"
+          aria-controls="Payment_Method-tab-pane" aria-selected="true"><i class="fa fa-credit-card me-1"
+            aria-hidden="true"></i>
+          Payment</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Settings-tab" data-bs-toggle="tab" data-bs-target="#Settings-tab-pane"
+          type="button" role="tab" aria-controls="Settings-tab-pane" aria-selected="true"><i
+            class="fa fa-cog me-1" aria-hidden="true"></i>
+          Settings</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Notification-tab" data-bs-toggle="tab"
+          data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-bell me-1"
+            aria-hidden="true"></i>
+          Reference </button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" class="nav-link " aria-current="page" style="color: #000;">
+        <hr>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" style="text-decoration: none;"><button class="nav-link text-dark" id="Notification-tab"
+          data-bs-toggle="tab" data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-arrow-right me-1"
+            aria-hidden="true"></i>
+          Log Out</button></a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <div class="row">
+    <div class="">
+      <button id="sidebarCollapse" type="button" class="btn btn-primary rounded-pill px-4 mb-4"><i class="fa fa-bars me-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+    </div>
+    
+  </div>
+
+  <!-- Demo content -->
+  <div class="page-content" id="content">
+    <!-- toogle button -->
+   
+    
+  </div>
+
+  <!-- URl shortener -->
+
+  <div class="container">
+    <form class="d-flex" role="search">
+      <input type="text" class="form-control w-100 bg-transpernt" placeholder="Short Your Link..."
+        style="border: hidden; border-top: 1px solid#477dee; border-bottom: 1px solid #477dee; border-left: 1px solid #477dee; border-top-left-radius: 10px;;border-bottom-left-radius: 10px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+      <button class="btn w-10 bg-white" type="submit"
+        style="border: hidden; border-top: 1px solid #477dee; border-bottom: 1px solid #477dee; border-right: 1px solid #477dee; border-top-left-radius: 0px;;border-bottom-left-radius: 0px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><i
+          class="fa fa-search text-primary" aria-hidden="true"></i></button>
+
+
+    </form>
+  </div>
+  
+
+    <!-- URl end coding shortene -->
+
+<!-- today date list -->
+<div class="container mt-5 bg-primary" style="border-radius: 10px;">
+<p class="text-start fa-1 x d-flex justify-content-start align-items-center" style="height: 50px; color: rgb(255, 255, 255);">
+  Today Report/2022-03-24
+  </p>
+</div>
+
+<!-- main contain for main view count   -->
+<div class=" mt-5">
+<div class="row g-4">
+<div class="col">
+  <div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+    <div class="card-body">
+      
+      <div class="d-flex justify-content-between ">
+        <h5 class="card-title" style="color: #8898AA; font-size: small;">View</h5>
+        <div>
+          
+          <span class="d-flex justify-content-end"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+          
+        </div>
+      </div>
+
+      <span class="lead" style="font-weight: bold;">50</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+    <div class="card-body">
+      <div class="d-flex justify-content-between ">
+        <h5 class="card-title " style="color: #8898AA; font-size: small;">Earning</h5>
+        <div>
+          <span class="d-flex justify-content-end"><i class="fa fa-usd" aria-hidden="true"></i></span>
+          
+          
+        </div>
+      </div>
+      <span class="lead" style="font-weight: bold;">$5.000</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        
+        <h5 class="card-title" style="color: #8898AA; font-size: small;">REF Erning</h5>
+        <div>
+          <span class="d-flex justify-content-end"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+
+        </div>
+      </div>
+      <span class="lead" style="font-weight: bold;">$1.120</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        
+        <h5 class="card-title" style="color: #8898AA; font-size: small;">AVG CPM</h5>
+        <div>
+          
+          <span class="d-flex justify-content-end"><i class="fa fa-area-chart" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <span class="lead" style="font-weight: bold;">$10.000</span>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- total collation of earning -->
+<div class="container mt-5 bg-primary" style="border-radius: 10px;">
+<p class="text-start font-monospace d-flex justify-content-start align-items-center" style="height: 50px; color: #fff;">
+Month Report/2022-03-24
+</p>
+</div>
+
+<!-- total collation of earning count data  -->
+
+<div class=" mt-5">
+<div class="row g-4">
+<div class="col">
+<div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title" style="color: #8898AA; font-size: small;">View</h5>
+      
+      <div>
+        <span class="d-flex justify-content-end"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+        
+      </div>
+    </div>
+    <span class="lead" style="font-weight: bold;">10000</span>
+
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      
+      <h5 class="card-title " style="color: #8898AA; font-size: small;">Earning</h5>
+      <div>
+        <span class="d-flex justify-content-end"><i class="fa fa-usd" aria-hidden="true" ></i></span>
+
+      </div>
+    </div>
+    <span class="lead" style="font-weight: bold;">$80.357</span>
+
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title" style="color: #8898AA; font-size: small;">REF Erning</h5>
+      
+      <div>
+        <span class="d-flex justify-content-end"><i class="fa fa-sitemap" aria-hidden="true"></i></span>
+
+      </div>
+    </div>
+    <span class="lead" style="font-weight: bold;">$14.1240</span>
+
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
+  <div class="card-body">
+    <div class="d-flex justify-content-between">
+      <h5 class="card-title" style="color: #8898AA; font-size: small;">AVG CPM</h5>
+      
+      <div>
+        <span class="d-flex justify-content-end"><i class="fa fa-area-chart" aria-hidden="true"></i></span>
+
+      </div>
+    </div>
+    <span class="lead" style="font-weight: bold;">$10.000</span>
+
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- total earning data chart  -->
+  </div>
+
+</div>
+
+<!-- End demo content -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="compress\jquery-3.6.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+

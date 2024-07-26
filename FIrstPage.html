@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .color {
+      transition: 0.5ms;
+      background: #fff;
+    }
+
+    .banner-image {
+      background-image: url("img/bax.png");
+    }
+
+    .color:hover {
+      background: rgb(0, 157, 255);
+      color: #fff;
+    }
+
+  </style>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+      <div class="container-fluid">
+        <a href="FIrstPage.html" class="navbar-brand"><img src="https://free-url-shortener.rb.gy/url-shortener.png"
+            style="border-radius: 10%; height: 40px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          style="border-radius: 50px; background-color: #000;">
+          <span class="navbar-toggler-icon" style="background-color: #000; color: #000; border-radius: 50%;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav ">
+            <li class="nav-item"><a href="" class="nav-link font-big" style="color: rgb(255, 0, 0);">Home</a></li>
+            <li class="nav-item"><a href="Home_Page/HomePage.html" class="nav-link font-big" style="color: #000;">Dashbord</a></li>
+            <li class="nav-item"><a href="Home_Page/PublicerRate.html" class="nav-link " style="color: #000;">Publisher Rate</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link" style="color: #000;">Payment Proof</a></li>
+            <li class="nav-item"><a class="nav-link " style="color: #000; cursor: pointer;" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Login</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000; cursor: pointer;" data-bs-toggle="modal"
+                data-bs-target="#singUpModal">SingUp</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- banner -->
+    <div class="banner-image w-auto d-flex justify-content-center align-items-center vh-100"
+      style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
+      <div class="container">
+        <h3 class="text-center display-4 mt-4 text-white-50"
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Short Link and Earn Money
+        </h3>
+        <h4 class="text-center mt-2 text-white-50"
+          style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Earn up to 10$/1000 views
+        </h4>
+
+        <div class="d-flex justify-content-center mt-5">
+          <form class="d-flex" role="search">
+            <input type="text" class="form-control w-100 bg-transpernt" placeholder="Short Your Link..."
+              style="border: hidden; border-top: 1px solid#477dee; border-bottom: 1px solid #477dee; border-left: 1px solid #477dee; border-top-left-radius: 10px;;border-bottom-left-radius: 10px; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+            <button class="btn w-25 bg-white" type="submit"
+              style="border: hidden; border-top: 1px solid #477dee; border-bottom: 1px solid #477dee; border-right: 1px solid #477dee; border-top-left-radius: 0px;;border-bottom-left-radius: 0px; border-top-right-radius: 8px; border-bottom-right-radius: 8px;"><i
+                class="fa fa-search text-primary" aria-hidden="true"></i></button>
+
+
+          </form>
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <!-- SingUp modal -->
+    <div class="modal fade" id="singUpModal" tabindex="-1" aria-labelledby="singUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-2 text-center" id="exampleModalLabel"
+              style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  ">Sing Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="">
+                <div class="row">
+                  <div class="col-12">
+                    <label for="Username" class="form-label">Username</label>
+                    <input type="username" name="username" placeholder="username" id="username" class="form-control"
+                      required>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" placeholder="Email" id="email" class="form-control" required>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <label for="password" class="form-label">Passoword</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                      required>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <label for="Re-Password" class="form-label">Re-Passoword</label>
+                    <input type="Re-password" name="Re-password" id="Re-password" class="form-control"
+                      placeholder="Re-Password" required>
+                  </div>
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="form-check">
+                      <input type="checkbox" name="" id="" class="form-check-input">
+                      <label for="flexCheckDefult" class="form-check-label">Remember me</label>
+                    </div>
+                    <div>
+
+                      <a href="" class="text-decoration-none text-primary">Alredy Account Exit</a>
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-grid mt-3">
+                    <button class="btn btn-primary" type="submit" id="but">Singin</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-2 text-center" id="exampleModalLabel"
+              style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  ">Sing Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="">
+                <div class="row">
+                  <div class="col-12 mt-3">
+                    <label for="email" class="form-label">Email/Username</label>
+                    <input type="email" name="email" placeholder="Email" id="email" class="form-control" required>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <label for="password" class="form-label">Passoword</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password"
+                      required>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="form-check">
+                      <input type="checkbox" name="" id="" class="form-check-input">
+                      <label for="flexCheckDefult" class="form-check-label">Remember me</label>
+                    </div>
+                    <div>
+
+                      <a href="" class="text-decoration-none text-primary">Forget Passoword</a>
+                    </div>
+                  </div>
+
+                  <div class="col-12 d-grid mt-3">
+                    <button class="btn btn-primary" type="submit" id="but">Singin</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contant  -->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+        <h2 class="display-3 mt-5 " style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+          How to Use</h2>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col" style="cursor: pointer;">
+          <div class="card h-100 color">
+            <span class="d-flex justify-content-center mt-5 mb-5 icon"><i class="fa fa-user-plus"
+                style="font-size: 800%;"></i></span>
+            <div class="card-body">
+              <h5 class="card-title text-center">CREATE AN ACCOUNT</h5>
+              <p class="text-center mt-5" style="font: bold;">In order to get started with Links, at first all you need
+                is Links Account & you can create it by sign-up option.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="cursor: pointer;">
+          <div class="card h-100 color">
+            <span class="d-flex justify-content-center mt-5 mb-5 icon"><i class="fa fa-link"
+                style="font-size: 800%;"></i></span>
+            <div class="card-body">
+              <h5 class="card-title text-center">SHORTE YOUR LINK</h5>
+              <p class="text-center mt-5" style="font: bold;">Shorten that links with Links & copy them and start
+                sharing on any platform e.g: YouTube, Telegram, Website etc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="cursor: pointer;">
+          <div class="card h-100 color">
+            <span class="d-flex justify-content-center mt-5 mb-5 icon"><i class="fa fa-dollar"
+                style="font-size: 800%;"></i></span>
+            <div class="card-body">
+              <h5 class="card-title text-center">EAREN MONEY</h5>
+              <p class="text-center mt-5" style="font: bold;">Here you Go, since you've shared your Shorten links and
+                got views on it, So that you're getting paid for every view you get.check our CPM rates at Payout Rates
+                Page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- other conatnt -->
+    <div class="container mt-5 mb-5">
+      <hr>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="text-center">
+        <p class="display-6"
+          style="color: #009dff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Extra Earn
+          Money</p>
+        <h1 class="display-3">WHY JOIN US?</h1>
+      </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5" style=" display: flex; justify-content: center; align-items: center;">
+      <div class="row row-cols-md-3 row-cols-1 g-4 ">
+        <div class="col-sm-4 " style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/email.png"></div>
+          <div class="feture-heading mt-5 text-center" style="color: #009dff;">WHAT IS SHARELINK.CO | EARN MONEY ON
+            SHORT
+            LINKS?</div>
+          <div class="future-content  mt-4"> Earn money on short links is a completely free tool where you can create
+            short links, which apart from being free, you get paid! So, now you can make money from home, when managing
+            and protecting your links.</div>
+        </div>
+        <div class="col-sm-4" style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/save-money.png"></div>
+          <div class="feture-heading mt-5 text-center " style="color: #009dff;">HOW CAN I EARN?</div>
+          <div class="future-content mt-5">How can you start making money with Sharelink.co | Earn money on short links?
+            It's just 3 steps: create an account, create a link and post it - for every visit, you earn money. It's just
+            that easy!</div>
+        </div>
+        <div class="col-sm-4" style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/bonus.png"></div>
+          <div class="feture-heading mt-5 text-center" style="color: #009dff;">20% REFEREAL BOUNS</div>
+          <div class="future-content mt-5">The Sharelink.co | Earn money on short links referral program is a great way
+            to spread the word of this great service and to earn even more money with your short links! Refer friends
+            and receive 20% of their earnings for life!</div>
+        </div>
+        <div class="col-sm-4" style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/up-arrow.png"></div>
+          <div class="feture-heading mt-5 text-center " style="color: #009dff;">HEIGHTES CPM</div>
+          <div class="future-content mt-3">Make the most out of your traffic with our always increasing rates.</div>
+        </div>
+        <div class="col-sm-4" style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/api.png"></div>
+          <div class="feture-heading mt-5 text-center " style="color: #009dff;">API</div>
+          <div class="future-content mt-3">Shorten links more quickly with easy to use API and bring your creative and
+            advanced ideas to life.</div>
+        </div>
+        <div class="col-sm-4" style="height: 400px;">
+          <div class="image d-flex justify-content-center"><img src="img/customer-support.png"></div>
+          <div class="feture-heading mt-5 text-center " style="color: #009dff;">SUPPORT</div>
+          <div class="future-content mt-3">A dedicated support team is ready to help with any questions you may have.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+    </div>
+    <!-- contact -->
+
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center display-3 mt-5 mb-5"
+        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Contact
+      </div>
+    </div>
+    <div class="bg-light">
+      <div class="container">
+        <form class="row g-3">
+          <div class="col-md-6 ">
+            <label for="inputEmail4" class="form-label mt-4" style="background: transparent;">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label mt-4" style="background: transparent;">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label" style="background: transparent;">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label" style="background: transparent;">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option value="None">None</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label" style="background: transparent;">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <label for="inputArea" class="form-label" style="background: transparent;">Your Message</label>
+            <textarea type="text" class="form-control" id="inputAddress"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                I consent to having this website store my submitted information so they can respond to my inquiry
+              </label>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-primary mb-5">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+        </path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+      </symbol>
+    </svg>
+    <div class="footer bg-light">
+      <div class="container">
+        <footer class="py-3">
+          <ul class="nav justify-content-center border-bottom pb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-danger" style="color: #000;">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #000;">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #000;">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #000;">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #000;">About</a></li>
+          </ul>
+
+          <p class="text-center" style="color: #000;">&copy; 2022 LinkShort Company , All copyright there</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </body>
+  <script>
+
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-light', 'shadow');
+      }
+      else {
+        nav.classList.remove('bg-light', 'shadow');
+      }
+    });
+
+  </script>
+  <script>
+
+  </script>
+
+</html>
